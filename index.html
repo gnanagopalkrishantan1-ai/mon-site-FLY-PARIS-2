@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>VERDANT SUMMER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">VERDANT</div>
+  <div class="tag">Luxury Nature Summer Collection</div>
+</header>
+
+<section class="hero">
+  <h1>Luxe naturel d’été</h1>
+  <p>Des produits élégants inspirés de la nature</p>
+
+  <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+    Découvrir la collection
+  </button>
+</section>
+
+<!-- DECOR ELEMENTS -->
+<div class="decor decor1"></div>
+<div class="decor decor2"></div>
+<div class="decor decor3"></div>
+
+<section id="products" class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" />
+    <h3>BASIC FIT</h3>
+    <p>45€</p>
+    <button onclick="buy('https://buy.stripe.com/28E28t2UI2kaaNV83u5c400')">Acheter</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919" />
+    <h3>BASIC</h3>
+    <p>0.0€</p>
+    <button onclick="buy('https://buy.stripe.com/eVqdRbcviaQG9JRbfG5c401')">Acheter</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
+    <h3>Bien-être Spa</h3>
+    <p>80€</p>
+    <button onclick="buy('https://buy.stripe.com/eVqdRbcviaQG9JRbfG5c401')">Acheter</button>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>VERDANT © Luxury Nature Experience</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
